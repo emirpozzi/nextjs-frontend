@@ -1,0 +1,86 @@
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.card {
+  max-width: 300px;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  border-color: rgb(109, 109, 109);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.title {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.ml {
+  margin-left: 0.5rem;
+}
+
+.bodyType {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+}
+
+.linksContainer {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  color: #043266;
+}
+
+.links {
+  text-transform: uppercase;
+}
+
+.links:hover,
+.links:focus,
+.links:active {
+  color: #0070f3;
+}
+
+.icon {
+  transform: rotate(180deg);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  margin-top: 10px;
+}
+
+.button {
+  margin-left: 10px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  opacity: 30%;
+}
